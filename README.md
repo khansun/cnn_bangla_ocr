@@ -8,3 +8,5 @@
 Resize all images and save to dir:  `resize.py`
 
 Image data to ndarray: `data_npy.py`
+
+Pre-Processing for RGB data: `pre_process.py`
