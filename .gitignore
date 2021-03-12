@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 omniglot/
+input/
 wandb/
 wheels/
 BanglaLekha-Isolated/
