@@ -6,7 +6,7 @@ import numpy as np
 from time import time
 from time import sleep
 
-folder = "BanglaLekha-Isolated/binTest"
+folder = "BanglaLekha-Isolated/decTrain"
 
 onlyfiles = [f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))]
 
@@ -62,7 +62,7 @@ Xtrain_monochrome = dataset.mean(axis=3)
 Xtrain_monochrome[Xtrain_monochrome < 0 ] = 0
 #Xtrain_monochrome = Xtrain_monochrome/3
 print(np.shape(Xtrain_monochrome))
-np.save("binXtest", Xtrain_monochrome)
+np.save("decXtrain", Xtrain_monochrome)
 import matplotlib.pyplot as plt
 plt.imshow(Xtrain_monochrome[0])
 plt.show()

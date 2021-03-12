@@ -24,7 +24,7 @@ extensions= ['PNG']
 
 
 
-path= os.path.abspath("BanglaLekha-Isolated/binTrain")
+path= os.path.abspath("BanglaLekha-Isolated/train/9")
 
 
 
