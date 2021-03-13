@@ -36,12 +36,3 @@ gpu_time = timeit.timeit('gpu()', number=10, setup="from __main__ import gpu")
 print(gpu_time)
 print('GPU speedup over CPU: {}x'.format(int(cpu_time/gpu_time)))
 
-
-
-# 
-#from sklearn.model_selection import train_test_split
-
-#Splitting 
-#X_train, X_test, y_train, y_test = train_test_split(dataset, y_train, test_size=0.2, random_state=33)
-#X_test, X_val, y_test, y_val = train_test_split(X_test, y_test, test_size=0.5, random_state=33)
-#print("Train set size: {0}, Val set size: {1}, Test set size: {2}".format(len(X_train), len(X_val), len(X_test)))

@@ -1,6 +1,4 @@
 import os, sys
-from IPython.display import display
-from IPython.display import Image as _Imgdis
 from PIL import Image
 import numpy as np
 from time import time
@@ -23,16 +21,11 @@ for _file in onlyfiles:
     label_in_file = _file.find(" ")
     y_train.append(int(_file[0:label_in_file]))
     
-print("Files in train_files: %d" % len(train_files))
+print("Files in directory: %d" % len(train_files))
 
-# Original Dimensions
+#Dimensions
 image_width = 21  
 image_height = 21
-ratio = 1  #resizing factor
-
-image_width = int(image_width / ratio)
-image_height = int(image_height / ratio)
-
 channels = 3
 nb_classes = 1
 
@@ -62,7 +55,7 @@ Xtrain_monochrome = dataset.mean(axis=3)
 Xtrain_monochrome[Xtrain_monochrome < 0 ] = 0
 #Xtrain_monochrome = Xtrain_monochrome/3
 print(np.shape(Xtrain_monochrome))
-np.save("XtestNumta", Xtrain_monochrome)
+#np.save("XtestNumta", Xtrain_monochrome)
 import matplotlib.pyplot as plt
-plt.imshow(Xtrain_monochrome[0])
+plt.imshow(Xtrain_monochrome[12])
 plt.show()
